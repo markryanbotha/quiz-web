@@ -4,6 +4,6 @@
 </p>
 <p ng-show="quizList" ng-repeat="quiz in quizList">
     <span>{{quiz.name}}</span>
-    <button ng-click="hostQuiz(quiz)">Host</button>
+    <button ng-click="hostQuiz(quiz)" class="btn btn-dark">Host</button>
 </p>
 <p ng-show="error" class="error">{{error}}</p>

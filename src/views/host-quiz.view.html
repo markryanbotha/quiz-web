@@ -11,8 +11,8 @@
         </p>
         <p>Total: {{state.count}} players</p>
         <p>
-            <button ng-click="next()">Start the quiz!</button>
-            <button ng-click="abort()">Cancel</button>
+            <button ng-click="next()" class="btn btn-dark">Start the quiz!</button>
+            <button ng-click="abort()" class="btn btn-light">Cancel</button>
         </p>
     </div>
 
@@ -26,7 +26,7 @@
             </span>
         </p>
         <p>Received {{state.answerCount}} / {{state.playerCount}} answers</p>
-        <button ng-click="next()">Reveal answer</button>
+        <button ng-click="next()" class="btn btn-dark">Reveal answer</button>
     </div>
 
     <div ng-show="state.status=='showing-answer'">
@@ -39,7 +39,7 @@
             </span>
             <span>({{answer.count}})</span>
         </p>
-        <button ng-click="next()">Reveal scores</button>
+        <button ng-click="next()" class="btn btn-dark">Reveal scores</button>
     </div>
 
     <div ng-show="state.status=='showing-scores'">
@@ -50,8 +50,8 @@
             <span>{{player.name}}</span>
             <span>{{player.score}} points</span>
         </p>
-        <button ng-hide='state.isGameOver' ng-click="next()">Next question</button>
-        <button ng-show='state.isGameOver' ng-click="next()">Finish</button>
+        <button ng-hide='state.isGameOver' ng-click="next()" class="btn btn-dark">Next question</button>
+        <button ng-show='state.isGameOver' ng-click="next()" class="btn btn-dark">Finish</button>
     </div>
 
 </div>

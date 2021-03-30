@@ -1,7 +1,7 @@
 <h1>Join Quiz</h1>
-<input ng-model="roomCode" placeholder="Room Code">
-<input ng-model="playerName" placeholder="Player Name">
-<button ng-disabled="status=='joining'" ng-click="join()">Join Quiz</button>    
+<input ng-model="roomCode" placeholder="Room Code" class="form-control w-25" style="margin: 3px; display: inline;">
+<input ng-model="playerName" placeholder="Player Name" class="form-control w-25" style="margin: 3px; display: inline;">
+<button ng-disabled="status=='joining'" ng-click="join()" class="btn btn-dark" style="margin: 3px">Join Quiz</button>    
 <p ng-show="status=='joining'" class="delay">
     Joining - please wait...
 </p>
